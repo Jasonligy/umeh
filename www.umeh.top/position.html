@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            opacity: 0.8;
+        }
+        .cls0 {
+        
+        opacity:0.5;
+        /* position: relative; */
+        
+        
+        top: 100px;
+        right:0px;
+        /* left: 100px; */
+        float:left;
+        
+        width: 200px;
+        
+        height: 220px;
+        
+        background-color: yellow;
+    
+    }
+        .box1 {
+        
+        
+            /* position: relative; */
+            
+            
+            top: 100px;
+            right:0px;
+            /* left: 100px; */
+            float:left;
+            
+            width: 200px;
+            
+            height: 200px;
+            
+            background-color: pink;
+        
+        }
+        /* absolute位置可以超过父级元素 */
+        .box1 .box2 {
+            /* position:absolute; */
+            float:right;
+            top:20%;
+            width: 250px;
+            
+            height: 180px;
+            
+            background-color: deeppink;
+        
+        }
+        .box2 {
+            
+            width: 180px;
+            
+            height: 180px;
+            
+            background-color: deeppink;
+        
+        }
+        .box3{
+            background-color:black;
+        }
+        </style>
+      
+</head>
+<body>
+    <div >yy</div>
+    <div class="cls0">
+
+    </div>
+    <div class="box1"></div>
+    <div class="box1">
+        <div class="box2">里面</div>
+    </div>
+    
+    <div class="cls0"></div>
+    <div class="cls0"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <div class="box3">yy</div>
+    <span class="box3">yy</span>
+    <span class="box3">yy
+        <span class="box3">yy</span>
+    </span>
+    <div class="box2">test</div>
+</body>
+</html>
